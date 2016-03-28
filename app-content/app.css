@@ -1,13 +1,62 @@
 ﻿
+/* page frame part */
+body {	
+	background-color: darkred ;
+	color: white;
+}
+
+.navbar a{
+	text-decoration: none;
+	color: gold;
+}
+
+
+
+
+
+
+
 
 
 /* home page part css */
 
+#homeplans {
+	text-align: center;
+}
+
+#services {
+	text-align: center;
+}
+
+#services  img{
+	width: 100%;
+}
   
   
+/* finans page part css */
+
   
+#finans {
+	text-align: center;
+}
+
+#finans  img{
+	width: 100%;
+	height: 180px;
+}  
   
-  
-  
-  
+
+/* about page part css */
+#about {
+	text-align: middle;
+}
+#about img{
+	width: 100%;
+	height: auto;
+}  
+
+.nav a{
+	text-decoration: none;
+	color: gold;
+}
   

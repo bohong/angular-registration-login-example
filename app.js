@@ -14,7 +14,37 @@
                 templateUrl: 'home/home.view.html',
                 controllerAs: 'vm'
             })
+			
+			.when('/finan', {
+                controller: 'FinanController',
+                templateUrl: 'finan/finan.view.html',
+                controllerAs: 'vm'
+            })
 
+			.when('/partners', {
+                controller: 'PartnersController',
+                templateUrl: 'partners/partners.view.html',
+                controllerAs: 'vm'
+            })
+			
+			.when('/services', {
+                controller: 'ServicesController',
+                templateUrl: 'services/services.view.html',
+                controllerAs: 'vm'
+            })			
+
+			.when('/account', {
+                controller: 'AccountController',
+                templateUrl: 'account/account.view.html',
+                controllerAs: 'vm'
+            })	
+			
+			.when('/about', {
+                controller: 'AboutController',
+                templateUrl: 'about/about.view.html',
+                controllerAs: 'vm'
+            })
+			
             .when('/login', {
                 controller: 'LoginController',
                 templateUrl: 'login/login.view.html',
