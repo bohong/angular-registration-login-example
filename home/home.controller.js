@@ -12,14 +12,14 @@
         vm.user = null;
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
-		vm.msg = null;
+		vm.finan = null;
 
         initController();
 
         function initController() {
             loadCurrentUser();
             loadAllUsers();
-			loadProduct('http://120.25.216.99:8080/CubicCapital/finaProduct/list/1/1');
+			loadFinan('http://120.25.216.99:8080/CubicCapital/finaProduct/list/1/3');
 			
         }
 
@@ -47,18 +47,19 @@
 		
 		// for cubic capital
 
-		
-		
-		
-		function loadProduct(url){
-			return $http.get(url).then(handleSuccess, handleError('Error getting product'));
+				
+		function loadFinan(url){
+			return $http.get(url).then(
+			function handleSuccess(res){
+				vm.finan = JSON.parse(res.data);
+			}, handleError('Error getting product'));
 		}
 		
-		function handleSuccess(res) {
-			console.log(res);
-			console.log(JSON.parse(res.data));
-            vm.msg = JSON.parse(res.data);
-        }
+		//function handleSuccess(res) {
+		//	console.log(res);
+		//	console.log(JSON.parse(res.data));
+        //    vm.msg = JSON.parse(res.data);
+        //}
 
         function handleError(error) {
             return function () {

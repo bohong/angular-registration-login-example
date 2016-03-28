@@ -4,22 +4,36 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>金英资本</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <link href="app-content/app.css" rel="stylesheet" />
 	
 	<script src="script/jquery-2.2.0.min.js"></script>
-	<script src="script/bootstrap.js"></script>
     <script src="script/angular.js"></script>
     <script src="script/angular-route.js"></script>
     <script src="script/angular-cookies.js"></script>
+	<script src="script/bootstrap.js"></script>
 </head>
 <body>
-
     <div class="jumbotron">
         <div class="container">
-            <div class="col-sm-10 col-sm-offset-1">
+			<div class="col-sm-10 col-sm-offset-1">
+				<nav class="navbar">
+					<div class="container-fluid">
+						<div class="navbar-header">
+						<a class="navbar-brand" href="#/">金英资本Cubiccapital</a>
+						</div>
+						<ul class="nav navbar-nav">
+						<li class="active"><a href="#/">金英首页</a></li>
+						<li><a href="#">金融产品</a></li>
+						<li><a href="#">服务产品</a></li>
+						<li><a href="#">我的帐号</a></li>
+						<li><a href="#">合作伙伴</a></li>
+						<li><a href="#">关于我们</a></li>
+						</ul>
+					</div>
+				</nav>
                 <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
-                <div ng-view></div>
+				<div ng-view></div>
             </div>
         </div>
     </div>

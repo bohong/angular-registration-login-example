@@ -1,5 +1,46 @@
 ﻿
-{{ vm.msg }}
+
+
+<div id="Carousel" class="carousel slide">
+<ol class="carousel-indicators">
+    <li data-target="Carousel" data-slide-to="0" class="active"></li>
+    <li data-target="Carousel" data-slide-to="1"></li>
+    <li data-target="Carousel" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+    <div class="item active">
+        <img src="img/jinyingcapitalservice.jpg" class="img-responsive">
+    </div>
+    <div class="item">
+        <img src="img/jinyingmembership.jpg" class="img-responsive">
+    </div>
+    <div class="item">
+        <img src="img/jinyingproducts.jpg" class="img-responsive">
+    </div>
+</div>
+<span class="left carousel-control" data-target="#Carousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+</span>
+<span class="right carousel-control" data-target="#Carousel" data-slide="next">
+   <span class="glyphicon glyphicon-chevron-right"></span>
+</span>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+		<h3>{{ vm.finan.pageBean.beanList[0].abbreviation }} </h3>
+		<p>{{ vm.finan.pageBean.beanList[0].partner.briefIntroduction }} </p>
+    </div>
+    <div class="col-sm-4"> 
+		<h3>{{ vm.finan.pageBean.beanList[1].abbreviation }} </h3>
+		<p>{{ vm.finan.pageBean.beanList[1].partner.briefIntroduction }} </p> 
+    </div>
+    <div class="col-sm-4">
+		<h3>{{ vm.finan.pageBean.beanList[2].abbreviation }} </h3>
+		<p>{{ vm.finan.pageBean.beanList[2].partner.briefIntroduction }} </p>
+    </div>
+</div>
+
 
 
 
