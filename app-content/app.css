@@ -11,15 +11,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
 /* home page part css */
-
 #homeplans {
 	text-align: center;
 }
@@ -33,9 +25,7 @@ body {
 }
   
   
-/* finans page part css */
-
-  
+/* finans page part css */  
 #finans {
 	text-align: center;
 }
@@ -54,7 +44,6 @@ body {
 	width: 100%;
 	height: auto;
 }  
-
 .nav a{
 	text-decoration: none;
 	color: gold;
