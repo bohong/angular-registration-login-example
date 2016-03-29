@@ -39,17 +39,33 @@ body {
 #servpage {
 	width: 80%;
 	align: center;
+	margin: auto;
 }
 #servpage img{
 	width: 300px;
 	height: auto;
 	padding: 5px;
 }
+
+/* partners page part css */
+#partnerpage {
+	width: 80%;
+	margin: auto;
+}
+
+#partnerpage img{
+	width: 300px;
+	height: auto;
+	padding-top: 60px;
+	padding-left: 10px;
+}
   
 
 /* about page part css */
 #about {
 	text-align: middle;
+	width: 80%;
+	margin: auto;
 }
 #about img{
 	width: 100%;
@@ -58,5 +74,17 @@ body {
 .nav a{
 	text-decoration: none;
 	color: gold;
+}
+
+
+/* footer part css */
+footer{
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+footer img{
+	width: 100px;
+	height: auto;
 }
   
