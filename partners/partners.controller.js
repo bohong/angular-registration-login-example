@@ -19,7 +19,7 @@
         function initController() {
             loadCurrentUser();
             loadAllUsers();
-			loadFinan('http://120.25.216.99:8080/CubicCapital/finaProduct/list/1/3');
+			//loadFinan('http://120.25.216.99:8080/CubicCapital/finaProduct/list/1/3');
 			
         }
 
